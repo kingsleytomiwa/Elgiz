@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "scheme": "com.elgiz.io",
+    "name": "elgiz-mobile",
+    "slug": "elgiz",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "notification": {
+      "icon": "./assets/icon.png"
+    },
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icon.png"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/ac562384-438f-419f-b39f-7573fe12b463"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.elgiz.io"
+    },
+    "android": {
+      "package": "elgiz.mobile",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-localization"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ac562384-438f-419f-b39f-7573fe12b463"
+      }
+    },
+    "owner": "aconite.io",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    }
+  }
+}

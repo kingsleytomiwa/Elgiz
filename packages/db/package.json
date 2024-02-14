@@ -1,0 +1,26 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "lint": "eslint *.ts*",
+    "prisma:generate": "npx prisma generate --schema=./prisma/schema.prisma",
+    "postinstall": "npm run prisma:generate",
+    "prisma:start": "npx prisma studio",
+    "prisma:push": "npx prisma db push",
+    "prisma:shareWAdminPanel": "npx prisma-import --force -s prisma/schema.prisma -o ../../apps/admin-panel/prisma/schema.prisma",
+    "prisma:shareWCRM": "npx prisma-import --force -s prisma/schema.prisma -o ../../apps/crm/prisma/schema.prisma",
+    "prisma:share": "npm run prisma:shareWAdminPanel && npm run prisma:shareWCRM"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.40",
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6",
+    "ts-node": "^10.8.1",
+    "tsconfig": "*"
+  },
+  "dependencies": {
+    "short-unique-id": "^5.0.3"
+  }
+}

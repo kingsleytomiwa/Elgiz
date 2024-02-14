@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  position: relative;
+  user-select: none;
+  /* overflow-x: hidden; */
+}
+
+.scrollBarNone::-webkit-scrollbar {
+  width: 0;
+}
+
+.burgerButton {
+  @apply w-[38px] h-[28px] p-[5px] hover:bg-transparent;
+}
+.burger {
+  @apply w-full h-[2px] relative;
+}
+.burger.active {
+  @apply bg-transparent;
+}
+.burger::after {
+  width: 100%;
+  height: 2px;
+  content: "";
+  transition: ease 0.3s;
+  position: absolute;
+  top: -8px;
+  left: 0;
+}
+.burger.active::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+.burger::before {
+  width: 100%;
+  height: 2px;
+  content: "";
+  transition: ease 0.3s;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+.burger.active::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.listTerms {
+  @apply font-medium font-secondary text-lg max-w-[541px] list-disc pl-5;
+}
+
+.burger.active span {
+  @apply hidden;
+}
+
+.titleTerms {
+  @apply font-bold lg:text-3xl text-2xl mb-[50px];
+}
+.descriptionTerms {
+  @apply font-medium font-secondary text-lg max-w-[541px];
+}
+
+@layer base {
+  ::after,
+  ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  svg {
+    display: inline-block;
+  }
+
+  html {
+    font-family: "Golos UI", sans-serif;
+    background: #fdfff1;
+    color: #2b3467;
+    font-size: 20px /*0.875rem*/;
+    scroll-behavior: smooth;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    line-height: 24px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.25;
+  }
+  h1 {
+    font-size: 3.75rem;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 0.875rem;
+  }
+
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1;
+    }
+  }
+
+  input {
+    font-family: "Montserrat";
+  }
+  textarea {
+    font-family: "Montserrat";
+  }
+
+  @tailwind components;
+
+  .trans {
+    transition: all 0.3s linear;
+  }
+
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #03c3de;
+    width: 14.46px;
+    height: 14.46px;
+    opacity: 1;
+  }
+
+  /* target all bullets */
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    border: 0.578378px solid #2b4e8c;
+    background: white;
+    width: 14.46px;
+    height: 14.46px;
+    opacity: 1;
+  }
+
+  .swiper.swiper-container {
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-bottom: 16px;
+  }
+
+  /*Slider*/
+  .slick-dots li sbutton {
+    font-size: 50px;
+  }
+
+  .slick-dots li.slick-active button {
+    color: red;
+  }
+}
+
+.notBorder:focus {
+  --tw-ring-shadow: none;
+}
+
+input.calculator-placeholder::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-family: 'Inter', sans-serif;
+}
+
+.custom-border-dash {
+  border-image: repeating-linear-gradient(0deg, transparent, transparent 10px, #FDFFF1 2px, #FDFFF1 18px);
+  border-image-slice: 12;
+}
+
+.border-dash {
+  border-image: repeating-linear-gradient(90deg, transparent, transparent 5px, #FDFFF1 2px, #FDFFF1 13px);
+  border-image-slice: 2;
+}

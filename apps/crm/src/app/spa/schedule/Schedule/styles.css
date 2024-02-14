@@ -1,0 +1,79 @@
+/* .rbc-time-view .rbc-allday-cell {
+	display: none
+} */
+
+/* .rbc-row {
+	padding: 10px
+} */
+
+.rbc-header {
+	border: none;
+	padding-bottom: 20px;
+}
+
+.rbc-header+.rbc-header {
+	border: none;
+}
+
+.rbc-time-header-content {
+	border: none
+}
+
+.rbc-time-view {
+	border-left: none;
+	border-top: none;
+	border-right: none;
+}
+
+.rbc-time-header.rbc-overflowing {
+	border: none
+}
+
+.rbc-events-container{
+	gap: 1
+}
+/* .rbc-event-content, */
+.rbc-event-label {
+	display: none;
+}
+
+.rbc-time-content {
+	border-top: 1px solid #ddd
+}
+
+/* .rbc-time-slot{
+	transform: translateY(-15px);
+} */
+
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group{
+	border-bottom: none !important;
+}
+
+/* .rbc-event,
+.rbc-day-slot .rbc-background-event {
+}
+
+
+.rbc-event {
+	background-color: purple !important;
+} */
+
+/* .rbc-events-container .rbc-event {
+	background-color: #9B51E0 !important;
+}
+
+.rbc-events-container .rbc-event:nth-child(2) {
+	background-color: #6FCF97 !important;
+}
+
+.rbc-events-container .rbc-event:nth-child(3) {
+	background-color: #F2C94C !important;
+}
+
+.rbc-events-container .rbc-event:nth-child(4) {
+	background-color: red !important;
+}
+
+.rbc-events-container .rbc-event:nth-child(5) {
+	background-color: blue !important;
+} */

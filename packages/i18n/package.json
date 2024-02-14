@@ -1,0 +1,15 @@
+{
+  "name": "i18n",
+  "version": "1.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "dependencies": {
+    "i18next": "23.7.19",
+    "i18next-resources-to-backend": "^1.2.0",
+    "next-i18next": "15.1.1",
+    "react-i18next": "^14.0.1"
+  },
+  "devDependencies": {
+    "translations": "*"
+  }
+}

@@ -1,0 +1,56 @@
+button.burgerButton {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+}
+
+.burgerButton::after {
+  width: 100%;
+  height: 3px;
+  content: "";
+  transition: ease 0.3s;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  border-radius: 9999px;
+  background-color: #2b3467;
+}
+.burgerButton.active::after {
+  transform: rotate(45deg);
+  top: 50%;
+  background-color: white;
+}
+.burgerButton::before {
+  width: 100%;
+  height: 3px;
+  content: "";
+  transition: ease 0.3s;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  border-radius: 9999px;
+  background-color: #2b3467;
+}
+.burgerButton.active::before {
+  transform: rotate(-45deg);
+  top: 50%;
+  background-color: white;
+}
+
+.burgerButton span {
+  width: 100%;
+  background-color: #2b3467;
+  position: absolute;
+  height: 3px;
+  top: 50%;
+  margin-top: -1.5px;
+  left: 0;
+  border-radius: 9999px;
+}
+
+.burgerButton.active span {
+  display: none;
+}
